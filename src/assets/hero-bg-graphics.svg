@@ -1,0 +1,13 @@
+<!-- src/assets/hero-bg-graphics.svg -->
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.1" stroke="white" stroke-width="2">
+    <!-- Top Left Sparkle -->
+    <path d="M400 250 L420 270 L400 290 L380 270 Z" />
+    <!-- Top Left Leaves -->
+    <path d="M250 300 C 270 320, 280 350, 260 370" stroke-linecap="round"/>
+    <path d="M260 305 C 280 325, 290 355, 270 375" stroke-linecap="round"/>
+    <!-- Bottom Left Ring -->
+    <path d="M200 850 L250 800 L300 850 L250 900 Z" />
+    <path d="M205 855 C 205 910, 295 910, 295 855" stroke-width="3" />
+  </g>
+</svg>
