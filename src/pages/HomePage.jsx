@@ -10,6 +10,10 @@ import VideoSection from '../components/VideoSection';
 import LatestProducts from '../components/LatestProducts';
 import JewelOnSaleSection from '../components/JewelOnSaleSection';
 import BestFeaturesSection from '../components/BestFeaturesSection';
+import HandpickedProducts from '../components/HandpickedProducts';
+import TestimonialSlider from '../components/TestimonialSlider';
+import NewsFeeds from '../components/NewsFeeds';
+import Footer from '../components/Footer';
 
 function HomePage() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -70,8 +74,13 @@ function HomePage() {
                 <LatestProducts />
                 <JewelOnSaleSection />
                 <BestFeaturesSection />
+                <HandpickedProducts />
+                <TestimonialSlider />
+                <NewsFeeds />
             </main>
 
+            <Footer />
+            
             {/* Scroll to Top Button */}
             <ScrollToTopButton isScrolled={isScrolled} />
         </div>

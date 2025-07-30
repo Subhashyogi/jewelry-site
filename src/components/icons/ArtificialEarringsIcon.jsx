@@ -1,0 +1,7 @@
+export const ArtificialEarringsIcon = (props) => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" {...props}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 6a3 3 0 11-3 3h1.5" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 6a3 3 0 103 3h-1.5" />
+    </svg>
+);

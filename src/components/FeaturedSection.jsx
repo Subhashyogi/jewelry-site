@@ -26,7 +26,7 @@ const DiamondSeparator = () => (
 // --- FULLY RESPONSIVE CategoryCard Component ---
 // No more fixed heights. It uses aspect-ratio to scale perfectly.
 const CategoryCard = ({ image, Icon, title, hoverText }) => (
-    <a href="#" className="relative block group aspect-square overflow-hidden">
+    <a href="#" className="relative block group aspect-[4/5] overflow-hidden">
         <img src={image} alt={title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
         <div className="absolute inset-0 bg-black/60 transition-opacity duration-300 group-hover:opacity-0"></div>
         <div className="absolute inset-0 bg-[#6F6146]/90 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>

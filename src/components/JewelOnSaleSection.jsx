@@ -49,7 +49,7 @@ const SaleCard = ({ item }) => (
     <a href="#" className={clsx("relative block group overflow-hidden h-[32rem] lg:h-auto", item.gridClass)}>
         <img src={item.image} alt={item.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
-        <div className="relative h-full flex flex-col justify-end p-8 md:p-12 text-white"><div className="flex items-center text-base"><BoxIcon className="h-5 w-5 mr-3" /><span>{item.products < 10 && '0'}{item.products} Products</span></div><h3 className="font-serif text-5xl md:text-6xl mt-3">{item.title}</h3><div className="absolute bottom-12 right-12 w-20 h-20 border border-white/50 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:bg-brand-gold transition-all duration-300"><ArrowRightIcon className="h-10 w-10" /></div></div>
+        <div className="relative h-full flex flex-col justify-end p-8 md:p-12 text-white"><div className="flex items-center text-base"><BoxIcon className="h-5 w-5 mr-3" /><span>{item.products < 10 && '0'}{item.products} Products</span></div><h3 className="font-serif text-5xl md:text-6xl mt-3">{item.title}</h3><div className="absolute bottom-8 right-8 w-12 h-12 border-2 border-white/30 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 bg-transparent hover:bg-brand-gold transition-all duration-300"><ArrowRightIcon className="h-6 w-6 text-white hover:text-black transition-colors duration-300" /></div></div>
     </a>
 );
 
@@ -69,25 +69,25 @@ function JewelOnSaleSection() {
             <img src={bgImage} alt="" className="absolute inset-0 w-full h-full object-cover opacity-10" />
             <div className="relative container mx-auto px-4">
                 <div className="flex flex-col lg:flex-row justify-between items-start mb-20"><div><p className="text-base tracking-[0.2em] text-white/70 font-sans">50 % DISCOUNT</p><h2 className="font-serif text-6xl sm:text-7xl lg:text-8xl text-white mt-3">Jewel On Sale</h2></div>
-                <div className="flex flex-wrap items-center gap-2 mt-8 lg:mt-0 p-2">
-  {TABS.map(tab => (
-    <button
-      key={tab}
-      onClick={() => handleTabClick(tab)}
-      className={clsx(
-        "px-8 py-4 text-base font-sans tracking-wider transition-colors duration-300",
-        {
-          // Show border for active tab
-          'border-2 border-white text-brand-white font-bold': activeTab === tab,
-          // Show border on hover for inactive tabs
-          'border-2 border-transparent text-brand-gray hover:border-white font-bold': activeTab !== tab,
-        }
-      )}
-    >
-      {tab}
-    </button>
-  ))}
-</div>
+                    <div className="flex flex-wrap items-center gap-2 mt-8 lg:mt-0 p-2">
+                        {TABS.map(tab => (
+                            <button
+                                key={tab}
+                                onClick={() => handleTabClick(tab)}
+                                className={clsx(
+                                    "px-8 py-4 text-base font-sans tracking-wider transition-colors duration-300",
+                                    {
+                                        // Show border for active tab
+                                        'border-2 border-white text-brand-white font-bold': activeTab === tab,
+                                        // Show border on hover for inactive tabs
+                                        'border-2 border-transparent text-brand-gray hover:border-white font-bold': activeTab !== tab,
+                                    }
+                                )}
+                            >
+                                {tab}
+                            </button>
+                        ))}
+                    </div>
                 </div>
                 <div className={clsx("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-8 lg:gap-10 transition-opacity duration-200 ease-in-out", { 'opacity-0': isAnimating, 'opacity-100': !isAnimating })}>
                     {saleData[activeTab].map(item => <SaleCard key={item.id} item={item} />)}

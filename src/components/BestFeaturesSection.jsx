@@ -40,7 +40,7 @@ const FeatureCard = ({ feature, image }) => {
         <div className="relative z-10 flex flex-col items-center md:items-start">
             <h2 className="absolute top-0 right-0 text-8xl font-bold text-white/10 z-0">0{feature.id}</h2>
             <feature.Icon className="h-16 w-16 text-brand-gold group-hover:animate-shake" />
-            <h3 className="font-serif text-3xl text-white mt-4">{feature.title}</h3>
+            <h3 className="font-serif text-3xl text-white mt-4 hover:text-brand-gold transition-colors duration-300">{feature.title}</h3>
             <p className="text-brand-gray mt-2">{feature.text}</p>
         </div>
     );
