@@ -1,0 +1,2 @@
+// src/components/icons/RingCategoryIcon.jsx
+export const RingCategoryIcon = (props) => ( <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" {...props}> <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9a9 9 0 119 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75a9 9 0 00-9 0m9 0a9 9 0 01-9 0" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 12.75a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" /></svg> );

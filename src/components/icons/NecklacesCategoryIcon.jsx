@@ -1,0 +1,1 @@
+export const NecklacesCategoryIcon = (props) => ( <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" {...props}> <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5a9 9 0 1110.5 0" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 12.75a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" /></svg> );

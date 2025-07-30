@@ -60,7 +60,8 @@ const CtaSection = ({ title, image, imagePosition }) => {
                     </span>
                 </div>
                 {/* Hover Overlay */}
-                <a href="#" className="absolute inset-0 bg-brand-gold flex items-center justify-center p-8 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                <a href="#" className="absolute inset-0 bg-brand-gold flex flex-col items-center justify-center p-8 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                    <h2 className="text-white font-serif text-3xl sm:text-4xl lg:text-5xl mb-6">{title}</h2>
                     <span className="bg-brand-charcoal text-white font-bold tracking-widest py-3 px-8 uppercase">
                         View Details
                     </span>
